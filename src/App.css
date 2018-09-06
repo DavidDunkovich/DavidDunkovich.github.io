@@ -1,6 +1,6 @@
-body {
-  background-color: #E7ECEF !important;
-}
+/* body {
+  background-color: #FBFAF9 !important;
+} */
 
 .menu{
   justify-content: center;
@@ -19,12 +19,22 @@ body {
   transform: translate(-50%, -50%);
   transition: top 1s ease;
 }
-.content{
+.container{
   position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  width: 100%;
+}
+.mainContent{
+  width: 50%;
+  margin: 0 auto;
 }
 .centered{
   text-align: center;
+}
+.accent{
+  color: #023C40;
+}
+.aboutList{
+  width: 90%;
+  margin: 0 auto !important;
 }

@@ -5,8 +5,8 @@ import { Transition } from 'semantic-ui-react';
 class Projects extends Component {
   render() {
     return (
-      <div className="content">
-        <Transition visible={this.props.visible} animation='scale' duration={500}>
+      <div className="mainContent">
+        <Transition visible={this.props.visible} animation='fade right' duration={500}>
           <h1>projects</h1>
         </Transition>
       </div>

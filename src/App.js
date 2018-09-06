@@ -7,31 +7,39 @@ import SocialMediaLinks from "./SocialMediaLinks";
 import { Header, Transition } from 'semantic-ui-react';
 
 class App extends Component {
-  state = {activeItem: false};
+  state = {
+    activeItem: 'About',
+    switching: false
+  };
 
   handleItemClick = (e, { name }) => {
-    if(name === this.state.activeItem){
+    const {activeItem} = this.state;
+    if(name === activeItem){
       this.setState({ activeItem: false });
     }
     else{
-      this.setState({ activeItem: name });
+      this.setState({ activeItem: name, switching: true});
+      setTimeout(() => { 
+        this.setState({
+           switching: false 
+        }); 
+      }, 1000);
     }  
   };
 
   render() {
-    const {activeItem} = this.state;
-    console.log(this.state.activeItem)
+    const {activeItem, switching} = this.state;
     return (
-      <div>
+      <div >
         <div className={activeItem ? "mainHeader" : "initialHeader"}>
           <Header as="h1" textAlign="center" content="David Dunkovich" />
           <Navigation activeItem={this.state.activeItem} handleItemClick={this.handleItemClick}/>
           <SocialMediaLinks/>
         </div>
-
-        <About visible={activeItem === "About"}/>
-        <Projects visible={activeItem === "Projects"}/>
-  
+        <div className="container">
+          <About visible={activeItem === "About" && !switching}/>
+          <Projects visible={activeItem === "Projects" && !switching}/>
+        </div>
       </div>
     );
   }
