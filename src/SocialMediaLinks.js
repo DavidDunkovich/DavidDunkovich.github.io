@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
       <div className="centered">
-        <h5>social links</h5>
+        <h5>insert social links</h5>
       </div>
     );
   }

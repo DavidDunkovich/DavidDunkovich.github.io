@@ -1,7 +1,9 @@
 /* body {
   background-color: #FBFAF9 !important;
 } */
-
+p{
+  font-size: 1.2em;
+}
 .menu{
   justify-content: center;
 }
@@ -32,9 +34,12 @@
   text-align: center;
 }
 .accent{
-  color: #023C40;
+  color: #002642;
+}
+.accent-weight{
+  font-weight: bolder;
 }
 .aboutList{
   width: 90%;
-  margin: 0 auto !important;
+  margin: 1em auto !important;
 }
