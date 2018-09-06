@@ -1,18 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navigation from "./Navigation";
+import About from "./About";
+import Projects from "./Projects";
+import SocialMediaLinks from "./SocialMediaLinks";
+import { Header, Transition } from 'semantic-ui-react';
 
 class App extends Component {
+  state = {activeItem: false};
+
+  handleItemClick = (e, { name }) => {
+    if(name === this.state.activeItem){
+      this.setState({ activeItem: false });
+    }
+    else{
+      this.setState({ activeItem: name });
+    }  
+  };
+
   render() {
+    const {activeItem} = this.state;
+    console.log(this.state.activeItem)
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Test</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <div className={activeItem ? "mainHeader" : "initialHeader"}>
+          <Header as="h1" textAlign="center" content="David Dunkovich" />
+          <Navigation activeItem={this.state.activeItem} handleItemClick={this.handleItemClick}/>
+          <SocialMediaLinks/>
+        </div>
+
+        <About visible={activeItem === "About"}/>
+        <Projects visible={activeItem === "Projects"}/>
+  
       </div>
     );
   }
