@@ -1,6 +1,14 @@
 /* body {
   background-color: #FBFAF9 !important;
 } */
+@import url('https://fonts.googleapis.com/css?family=Karla|Nunito|Rock+Salt');
+h2, h3, h4, h5, h6, p{
+  font-family: Nunito !important;
+}
+h1 {
+  font-family: Rock Salt !important;
+}
+
 p{
   font-size: 1.2em;
 }
