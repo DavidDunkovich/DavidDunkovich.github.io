@@ -43,3 +43,7 @@ p{
   width: 90%;
   margin: 1em auto !important;
 }
+.galleryButtons{
+  background-color: #002642 !important;
+  color: white !important;
+}

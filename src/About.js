@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Transition, List } from 'semantic-ui-react';
+import { Transition, List, Divider } from 'semantic-ui-react';
+import AboutGallery from './AboutGallery';
 
 class About extends Component {
 
@@ -39,13 +40,14 @@ class About extends Component {
                     </List.Item>
                 </List>
              
-            <p className="centered">
+            <p>
                 Besides nerding out, I also enjoy
                 <span className="accent accent-weight"> skiing</span>,
                 <span className="accent accent-weight"> hiking</span>,
                 <span className="accent accent-weight"> traveling</span>.
             </p>
-            <h3 className="centered">insert cool image gallery</h3>    
+            <Divider hidden />
+            <AboutGallery/>   
         </div>
         </Transition>
     );

@@ -8,7 +8,7 @@ import { Header } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
-    activeItem: false,
+    activeItem: 'About',
     switching: false
   };
 
