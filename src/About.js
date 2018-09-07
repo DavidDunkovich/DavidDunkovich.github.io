@@ -43,7 +43,7 @@ class About extends Component {
             <p>
                 Besides nerding out, I also enjoy
                 <span className="accent accent-weight"> skiing</span>,
-                <span className="accent accent-weight"> hiking</span>,
+                <span className="accent accent-weight"> hiking</span>, and
                 <span className="accent accent-weight"> traveling</span>.
             </p>
             <Divider hidden />
