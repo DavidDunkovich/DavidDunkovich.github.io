@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import { Transition, Grid } from 'semantic-ui-react';
 import './Projects.css';
-
+//DO i need rows if its set to 3?>
 class Projects extends Component {
   render() {
     return (
       <div className="mainContent">
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
         <Grid columns={3} stackable>
-            <Grid.Row>
+            <Grid.Row> 
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure class="snip1477"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" alt="sample35" />
                     <div class="title">
