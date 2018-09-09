@@ -1,14 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 figure.projectImage {
-  font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
-  min-width: 230px;
-  max-width: 315px;
+  margin: 0;
   width: 100%;
+  max-width: 300px;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
@@ -22,17 +18,11 @@ figure.projectImage *:after {
   -webkit-transition: all 0.55s ease;
   transition: all 0.55s ease;
 }
-figure.projectImage img {
-  max-width: 100%;
-  backface-visibility: hidden;
-  vertical-align: top;
-  opacity: 0.9;
-}
 figure.projectImage .title {
   position: absolute;
   top: 50%;
   left: 25px;
-  padding: 5px 10px 10px;
+  padding: 5px 10px;
 }
 figure.projectImage .title:before,
 figure.projectImage .title:after {
@@ -74,31 +64,40 @@ figure.projectImage .title div:after {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-figure.projectImage h2,
-figure.projectImage h4 {
+figure.projectImage h3,
+figure.projectImage h5 {
   margin: 0;
   text-transform: uppercase;
 }
-figure.projectImage h2 {
+figure.projectImage h3 {
+  font-weight: 500;
+  color: #002642;
+}
+figure.projectImage p {
+  font-size: 1.35em;
   font-weight: 400;
 }
-figure.projectImage h4 {
-  display: block;
+figure.projectImage h5 {
   font-weight: 700;
-  background-color: #ffffff;
-  padding: 5px 10px;
   color: #000000;
 }
-figure.projectImage figcaption {
+.white-bg{
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+figure.projectImage figcaption{
   position: absolute;
   bottom: 50%;
   left: 25px;
   text-align: left;
   opacity: 0;
-  padding: 5px 60px 5px 10px;
+  padding: 5px 10px;
   font-size: 0.5em;
   font-weight: 500;
   letter-spacing: 1.5px;
+}
+figure.projectImage .white-bg{
+  opacity: 0;
 }
 figure.projectImage figcaption p {
   margin: 0;
@@ -136,12 +135,10 @@ figure.projectImage.hover .title:after {
   transition-delay: 0.15s;
 }
 figure.projectImage:hover figcaption,
-figure.projectImage.hover figcaption {
+figure.projectImage.hover figcaption,
+figure.projectImage:hover .white-bg,
+figure.projectImage.hover .white-bg{
   opacity: 1;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-}
-/* Demo purposes only */
-body {
-  background-color: #212121;
 }
