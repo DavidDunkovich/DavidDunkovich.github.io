@@ -12,14 +12,14 @@ class About extends Component {
         <div className="mainContent">
             <p>
                 I will be graduating from the
-                <span className="accent-weight" style={{color: '#996633'}}> University of Wisconsin - Oshkosh</span> with a B.S. degree in
-                <span className="accent accent-weight"> Computer Science</span> with an emphasis in 
+                <span className="accent accent-weight"> University of Wisconsin - Oshkosh</span> with a B.S. degree in
+                <span className="accent accent-weight"> Computer Science</span> and an emphasis in 
                 <span className="accent accent-weight"> Software Engineering</span> in 
                 <span className="accent accent-weight"> December, 2018</span>.
             </p>
             <p>
                 I've had two summer software engineering internships at a Fortune 100 company, 
-                <span className="accent-weight" style={{color: '#5381ac'}}> Liberty Mutual Insurance</span>,
+                <span className="accent accent-weight" > Liberty Mutual Insurance</span>,
                 where I had the opportunity to:    
             </p>
             
