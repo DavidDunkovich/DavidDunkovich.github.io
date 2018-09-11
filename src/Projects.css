@@ -102,12 +102,13 @@ figure.projectImage .white-bg{
 figure.projectImage figcaption p {
   margin: 0;
 }
-figure.projectImage a {
+figure.projectImage .fake-link {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  cursor: pointer;
 }
 figure.projectImage:hover img,
 figure.projectImage.hover img {

@@ -42,7 +42,7 @@ class Projects extends Component {
                     <figcaption>
                       <p>A non-profit organization's website sponsoring a non-descriminatory school in Uganda.</p>
                     </figcaption>
-                    <SelectedProjectModal role='Designer - Developer - Maintainer' name='Sure Hope Foundation' 
+                    <SelectedProjectModal jobRole='Designer - Developer - Maintainer' name='Sure Hope Foundation' 
                       photoSrc='images/surehope2_resized.jpg' photoAlt='Sure Hope Image2'
                       company='Freelance'
                       location='Oconomowoc, WI'
@@ -74,7 +74,7 @@ class Projects extends Component {
                     <figcaption>
                       <p>First Place/People's Choice awarded hackathon web app used to minimize the amount of time spent on onboarding new hires.</p>
                     </figcaption>
-                    <SelectedProjectModal role='Team Lead - Designer - Developer' name='Firestack - First Place/People&apos;s Choice Awards' 
+                    <SelectedProjectModal jobRole='Team Lead - Designer - Developer' name='Firestack - First Place/People&apos;s Choice Awards' 
                       photoSrc='images/firestack2_resized.jpg' photoAlt='Firestack Image2'
                       company='Liberty Mutual Insurance - '
                       title='Software Engineering Intern'
@@ -106,7 +106,7 @@ class Projects extends Component {
                     <figcaption>
                       <p>Form used to automate emails, collect customer information, and access said information through an admin portal.</p>
                     </figcaption>
-                    <SelectedProjectModal role='Designer - Developer- Maintainer' name='Shiny Key Realty' 
+                    <SelectedProjectModal jobRole='Designer - Developer- Maintainer' name='Shiny Key Realty' 
                       photoSrc='images/shinykeyrealty.png' photoAlt='Shiny Key Realty2'
                       company='Freelance'
                       location='Oshkosh, WI'

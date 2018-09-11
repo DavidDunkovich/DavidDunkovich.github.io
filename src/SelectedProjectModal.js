@@ -7,8 +7,8 @@ class SelectedProject extends Component {
     render() {
 
     return (
-        <Modal trigger={<a href="#"></a>}>
-            <Modal.Header style={{fontSize: '1.3rem'}} className="accent">{this.props.role}</Modal.Header>
+        <Modal trigger={<span class="fake-link"></span>}>
+            <Modal.Header style={{fontSize: '1.3rem'}} className="accent">{this.props.jobRole}</Modal.Header>
             <Modal.Content image>
             <Image wrapped style={{minWidth: '300px'}} src={this.props.photoSrc} alt={this.props.photoAlt}/>
             <Modal.Description>
