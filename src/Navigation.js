@@ -21,8 +21,7 @@ class Navigation extends Component {
             />
             <Menu.Item
             name='Resume'
-            active={activeItem === 'Resume'}
-            onClick={this.props.handleItemClick}
+            href='/resume.pdf' target="_blank"
             />
         </Menu>
     );
