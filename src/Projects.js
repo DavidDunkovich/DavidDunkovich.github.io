@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Transition, Grid, Image } from 'semantic-ui-react';
+import { Transition, Grid, Image, GridColumn } from 'semantic-ui-react';
 import './Projects.css';
 import SelectedProjectModal from './SelectedProjectModal';
 //DO i need rows if its set to 3?>
@@ -30,9 +30,13 @@ class Projects extends Component {
   
   render() {
     return (
-      <div className="mainContent">
+      <div className="mainContent" style={{width: '30%'}}>
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
-        <Grid columns={3} stackable  style={{overflow: 'auto', maxHeight: 500, position: 'relative', left: '12px' }}>
+        {/* 
+          For when you need some scrolling action w/ too many projects
+          style={{overflow: 'auto', maxHeight: 575, position: 'relative', left: '12px' }}     
+        */}
+        <Grid columns={3} stackable centered style={{position: 'relative', left: '1px' }}>
            <Grid.Row>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
@@ -43,9 +47,9 @@ class Projects extends Component {
                         <h5>Sure Hope</h5>
                       </div>
                     </div>
-                    <figcaption>
+                    {/* <figcaption>
                       <p>A non-profit organization's website sponsoring a non-descriminatory school in Uganda.</p>
-                    </figcaption>
+                    </figcaption> */}
                     <SelectedProjectModal jobRole='Designer - Developer - Maintainer' name='Sure Hope Foundation' 
                       photoSrc='images/surehope2_resized.jpg' photoAlt='Sure Hope2'
                       company='Freelance'
@@ -76,9 +80,9 @@ class Projects extends Component {
                         <h5>Firestack</h5>
                       </div>
                     </div>
-                    <figcaption>
+                    {/* <figcaption>
                       <p>First Place/People's Choice awarded hackathon web app used to minimize the amount of time spent on onboarding new hires.</p>
-                    </figcaption>
+                    </figcaption> */}
                     <SelectedProjectModal jobRole='Team Lead - Designer - Developer' name='Firestack - First Place/People&apos;s Choice Awards' 
                       photoSrc='images/firestack2_resized.jpg' photoAlt='Firestack2'
                       company='Liberty Mutual Insurance - '
@@ -108,9 +112,9 @@ class Projects extends Component {
                         <h5>Shiny Key Realty</h5>
                       </div>
                     </div>
-                    <figcaption>
+                    {/* <figcaption>
                       <p>Form used to automate emails, collect customer information, and access said information through an admin portal.</p>
-                    </figcaption>
+                    </figcaption> */}
                     <SelectedProjectModal jobRole='Designer - Developer- Maintainer' name='Shiny Key Realty' 
                       photoSrc='images/shinykeyrealty.png' photoAlt='Shiny Key Realty2'
                       company='Freelance'
@@ -137,9 +141,9 @@ class Projects extends Component {
                         <h5>Moore &amp; Cross</h5>
                       </div>
                     </div>
-                    <figcaption>
+                    {/* <figcaption>
                       <p>A law firm's website which is used to attract clients and show their areas of expertise.</p>
-                    </figcaption>
+                    </figcaption> */}
                     <SelectedProjectModal jobRole='Designer - Developer - Maintainer' name='Moore &amp; Cross, LLP' 
                       photoSrc='images/moorecrosslogo.jpg' photoAlt='Moore and Cross Logo'
                       company='Freelance'
@@ -163,9 +167,9 @@ class Projects extends Component {
                         <h5>Balance Youth Sports</h5>
                       </div>
                     </div>
-                    <figcaption>
+                    {/* <figcaption>
                       <p>A website whose goal is to provide resources and experiences that foster balance in a young athlete’s life.</p>
-                    </figcaption>
+                    </figcaption> */}
                     <SelectedProjectModal jobRole='Designer - Developer - Maintainer' name='Balance Youth Sports' 
                       photoSrc='images/bys2.jpg' photoAlt='Balance Youth Sports2'
                       company='Freelance'

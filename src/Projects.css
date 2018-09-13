@@ -3,8 +3,7 @@ figure.projectImage {
   float: left;
   overflow: hidden;
   margin: 0;
-  width: 100%;
-  max-width: 300px;
+  width: 98%;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
@@ -26,9 +25,12 @@ figure.projectImage *:after {
 }
 figure.projectImage .title {
   position: absolute;
+  width: 75%;
   top: 50%;
-  left: 10%;
+  left: 50%;
   padding: 5px 10px;
+  -webkit-transform: translateY(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 figure.projectImage .title:before,
 figure.projectImage .title:after {
@@ -91,7 +93,7 @@ figure.projectImage h5 {
   background-color: #ffffff;
   padding: 5px 10px;
 }
-figure.projectImage figcaption{
+/* figure.projectImage figcaption{
   position: absolute;
   bottom: 50%;
   left: 10%;
@@ -101,13 +103,13 @@ figure.projectImage figcaption{
   font-size: 0.5em;
   font-weight: 500;
   letter-spacing: 1.5px;
-}
+} */
 figure.projectImage .white-bg{
   opacity: 0;
 }
-figure.projectImage figcaption p {
+/* figure.projectImage figcaption p {
   margin: 0;
-}
+} */
 figure.projectImage .fake-link {
   position: absolute;
   top: 0;
