@@ -3,7 +3,7 @@ import './App.css';
 import { Transition, Grid, Image } from 'semantic-ui-react';
 import './Projects.css';
 import SelectedProjectModal from './SelectedProjectModal';
-//DO i need rows if its set to 3?>
+
 const images = [
   {
       src: 'images/surehopelogo.jpg',
