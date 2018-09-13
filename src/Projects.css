@@ -9,7 +9,13 @@ figure.projectImage {
   text-align: center;
   font-size: 16px;
   background-color: #000000;
+  border-radius:50%;
+  border: 1px solid #777;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
 }
+
 figure.projectImage *,
 figure.projectImage *:before,
 figure.projectImage *:after {
@@ -21,7 +27,7 @@ figure.projectImage *:after {
 figure.projectImage .title {
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 10%;
   padding: 5px 10px;
 }
 figure.projectImage .title:before,
@@ -88,7 +94,7 @@ figure.projectImage h5 {
 figure.projectImage figcaption{
   position: absolute;
   bottom: 50%;
-  left: 25px;
+  left: 10%;
   text-align: left;
   opacity: 0;
   padding: 5px 10px;
@@ -112,10 +118,9 @@ figure.projectImage .fake-link {
 }
 figure.projectImage:hover img,
 figure.projectImage.hover img {
-  zoom: 1;
   filter: alpha(opacity=35);
   -webkit-opacity: 0.35;
-  opacity: 0.35;
+  opacity: 0.25;
 }
 figure.projectImage:hover .title:before,
 figure.projectImage.hover .title:before,
