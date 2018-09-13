@@ -32,7 +32,7 @@ class Projects extends Component {
     return (
       <div className="mainContent">
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
-        <Grid columns={3} stackable  style={{overflow: 'auto', maxHeight: 500 }}>
+        <Grid columns={3} stackable  style={{overflow: 'auto', maxHeight: 500, position: 'relative', left: '12px' }}>
            <Grid.Row>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
