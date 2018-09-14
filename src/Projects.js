@@ -55,12 +55,10 @@ class Projects extends Component {
                       company='Freelance'
                       location='Oconomowoc, WI'
                       description='In Uganda, and most sub-Sahara African countries, individuals with disabilities
-                        are viewed as less than human. Children born with physical or mental
-                        disabilities are often shunned and abandoned. At Sure Hope Foundation,
+                        are viewed as less than human. At Sure Hope Foundation,
                         they believe that every child deserves a future, no matter their physical or
                         mental capabilities. Sure Hope Foundation helps fund the primary school, Sure Prospects,
-                        located in Entebbe, Uganda. Over the years, the school has grown and flourished and
-                        now educates more than 500 students. For every 3 children attending the school without
+                        located in Entebbe, Uganda. For every 3 children attending the school without
                         disabilities, one child with disabilities can attend school free of charge.'
                       description2='Being a full time
                         boarding school with little government aid, Sure Prospects is in need of funds for
