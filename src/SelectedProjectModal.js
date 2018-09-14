@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { Modal, Image, Header, Button, Icon } from 'semantic-ui-react';
 
-class SelectedProject extends Component {
-     
+class SelectedProject extends Component { 
     render() {
-
     return (
         <Modal trigger={<span className="fake-link"></span>}>
             <Modal.Header style={{fontSize: '1.3rem'}} className="accent">{this.props.jobRole}</Modal.Header>
@@ -27,11 +25,8 @@ class SelectedProject extends Component {
                         <Icon name='share' />
                     </Button.Content>
                 </Button>
-            </Modal.Actions>
-            
-            
-            }
-            
+            </Modal.Actions>        
+            }          
         </Modal>    
     );
   }
