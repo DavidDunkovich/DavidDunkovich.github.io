@@ -23,18 +23,20 @@ p{
 }
 .mainHeader{
   position: absolute;
-  top: 20%;
+  top: 10em;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: top 1s ease;
 }
 .container{
   position: absolute;
-  top: 30%;
+  top: 16em;
   width: 100%;
 }
-.mainContent{
-  margin: 0 auto;
+@media only screen and (max-width: 525px) {
+  .container {
+    top: 17em;
+  }
 }
 .centered{
   text-align: center;
@@ -56,4 +58,58 @@ p{
 .galleryButtons{
   background-color: #002642 !important;
   color: white !important;
+}
+.aboutContent{
+  margin: 10px auto 0 auto;
+  width: 45%;
+}
+@media only screen and (max-width: 1400px) {
+  .aboutContent {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .aboutContent {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .aboutContent {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .aboutContent {
+    width: 75%;
+  }
+}
+.projectContent{
+  margin: 0 auto ;
+  width: 30%;
+}
+@media only screen and (max-width: 1400px) {
+  .projectContent {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .projectContent {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .projectContent {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projectContent {
+    width: 40%;
+    margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .projectContent {
+    width: 50%;
+  }
 }

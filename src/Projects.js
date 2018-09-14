@@ -30,7 +30,7 @@ class Projects extends Component {
   
   render() {
     return (
-      <div className="mainContent" style={{width: '30%'}}>
+      <div className="projectContent">
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
         {/* 
           For when you need some scrolling action w/ too many projects
@@ -40,11 +40,11 @@ class Projects extends Component {
            <Grid.Row>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
-                    <Image src={images[0].src} alt={images[0].alt} />
+                    <Image fluid src={images[0].src} alt={images[0].alt} />
                     <div className="title">
                       <div className="white-bg">
-                        <h3>Website</h3>
-                        <h5>Sure Hope</h5>
+                        <h5>Website</h5>
+                        <h6>Sure Hope</h6>
                       </div>
                     </div>
                     {/* <figcaption>
@@ -73,11 +73,11 @@ class Projects extends Component {
                 </Grid.Column>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
-                    <Image size="medium" src={images[1].src} alt={images[1].alt} />
+                    <Image fluid src={images[1].src} alt={images[1].alt} />
                     <div className="title">
                       <div className="white-bg">
-                        <h3>Web App</h3>
-                        <h5>Firestack</h5>
+                        <h5>Web App</h5>
+                        <h6>Firestack</h6>
                       </div>
                     </div>
                     {/* <figcaption>
@@ -105,11 +105,11 @@ class Projects extends Component {
                 </Grid.Column>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
-                  <Image src={images[2].src} alt={images[2].alt} />
+                  <Image fluid src={images[2].src} alt={images[2].alt} />
                     <div className="title">
                       <div className="white-bg">
-                        <h3>Web App</h3>
-                        <h5>Shiny Key Realty</h5>
+                        <h5>Web App</h5>
+                        <h6>Shiny Key Realty</h6>
                       </div>
                     </div>
                     {/* <figcaption>
@@ -134,11 +134,11 @@ class Projects extends Component {
               <Grid.Row>
               <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
-                  <Image src={images[4].src} alt={images[4].alt} />
+                  <Image fluid src={images[4].src} alt={images[4].alt} />
                     <div className="title">
                       <div className="white-bg">
-                        <h3>Website</h3>
-                        <h5>Moore &amp; Cross</h5>
+                        <h5>Website</h5>
+                        <h6>Moore &amp; Cross</h6>
                       </div>
                     </div>
                     {/* <figcaption>
@@ -160,11 +160,11 @@ class Projects extends Component {
                 </Grid.Column>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
-                  <Image src={images[3].src} alt={images[3].alt} />
+                  <Image fluid src={images[3].src} alt={images[3].alt} />
                     <div className="title">
                       <div className="white-bg">
-                        <h3>Website</h3>
-                        <h5>Balance Youth Sports</h5>
+                        <h5>Website</h5>
+                        <h6>Balance Youth Sports</h6>
                       </div>
                     </div>
                     {/* <figcaption>
@@ -185,8 +185,7 @@ class Projects extends Component {
                       link='http://balanceyouthsports.com'
                       />
                   </figure>
-                </Grid.Column>
-                
+                </Grid.Column>   
             </Grid.Row>
         </Grid>     
         </Transition>      

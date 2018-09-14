@@ -9,7 +9,7 @@ class About extends Component {
 
     return (
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
-        <div className="mainContent" style={{width: '40%'}}>
+        <div className="aboutContent">
             <p>
                 I will be graduating from the
                 <span className="accent accent-weight"> University of Wisconsin - Oshkosh</span> with a B.S. degree in
