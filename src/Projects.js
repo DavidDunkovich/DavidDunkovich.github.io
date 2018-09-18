@@ -116,8 +116,8 @@ class Projects extends Component {
                     <SelectedProjectModal jobRole='Designer - Developer- Maintainer' name='Shiny Key Realty' 
                       photoSrc='images/shinykeyrealty.png' photoAlt='Shiny Key Realty2'
                       company='Freelance'
-                      location='Oshkosh, WI'
-                      description='Shiny Key Realty is a home building/renovating company that specializes in...'
+                      location='Fox Valley, WI'
+                      description='Shiny Key Realty is a real estate company that specializes in residential real estate in Appleton, Wisconsin.'
                       description2='Co-Owner of Shiny Key Realty expressed his interest in simplifying the process to manage 
                       customer information during house showings. Rather than requiring the customer to physically write it down and for Ryan
                       to later input it into an excel document, this web application is used during home showings to 
