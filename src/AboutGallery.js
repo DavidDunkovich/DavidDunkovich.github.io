@@ -30,7 +30,7 @@ const images = [
 class AboutGallery extends Component {
     render() {
     return (
-        <Grid columns={3} stackable>
+        <Grid columns={3} stackable className='aboutGallery'>
             <Grid.Column style={{padding: '.5rem'}}>
                 <Reveal animated='small fade'>
                     <Reveal.Content visible style={{width: '100%'}}>

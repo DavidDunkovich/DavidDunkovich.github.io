@@ -63,6 +63,11 @@ p{
   margin: 10px auto 0 auto;
   width: 45%;
 }
+@media only screen and (max-width: 767px) {
+  .aboutGallery {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .aboutContent {
     width: 55%;

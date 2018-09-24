@@ -145,7 +145,7 @@ class Projects extends Component {
                     <SelectedProjectModal jobRole='Designer - Developer - Maintainer' name='Moore &amp; Cross, LLP' 
                       photoSrc='images/moorecrosslogo.jpg' photoAlt='Moore and Cross Logo'
                       company='Freelance'
-                      location='City, IL'
+                      location='Edwardsville, IL'
                       description='Moore &amp; Cross, attourneys at law, was formed in 2018 under partners
                       Austin Moore and Casey Cross. Both founding partners attended Northern Illinois University Law School and
                       eventually wanted to start their own practice.'
