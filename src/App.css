@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Nunito|Rock+Salt');
 body{
   background-color: #FFFFFF !important;
+  -webkit-font-smoothing: antialiased;
 }
 h2, h3, h4, h5, h6, p{
   font-family: Nunito !important;
@@ -67,11 +68,11 @@ p{
   width: 40%;
 }
 @media only screen and (max-width: 767px) {
-  .project-overflow{
+  /* .project-overflow{
     overflow: auto;
     max-height: 360px; 
     position: relative;
-  }
+  } */
   .aboutGallery {
     display: none !important;
   }

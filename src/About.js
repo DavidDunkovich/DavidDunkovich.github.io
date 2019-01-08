@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Transition, List, Divider, Image, Header } from 'semantic-ui-react';
+import { Transition, List, Divider, Image } from 'semantic-ui-react';
 import AboutGallery from './AboutGallery';
 
 class About extends Component {
