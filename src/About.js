@@ -25,7 +25,7 @@ class About extends Component {
                     <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>Summer, 2018</span>
                 </p>
                 <p style={{display:'inline-block', width:'55%' }}>
-                    Completed 1st software engineering summer internship
+                    Completed 1st summer software engineering internship
                 </p>
                 <p style={{float: 'right', textAlign:'right', width:'45%', fontSize: '16px'}} className="accent">
                     <span style={{color:'#3066BE'}}>Wausau, WI</span> | <span style={{color:'#48A9A6'}}>Summer, 2017</span>
