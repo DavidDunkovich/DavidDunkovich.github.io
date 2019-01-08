@@ -2,6 +2,9 @@
   background-color: #FBFAF9 !important;
 } */
 @import url('https://fonts.googleapis.com/css?family=Karla|Nunito|Rock+Salt');
+body{
+  background-color: #FFFFFF !important;
+}
 h2, h3, h4, h5, h6, p{
   font-family: Nunito !important;
 }
@@ -33,11 +36,7 @@ p{
   top: 16em;
   width: 100%;
 }
-@media only screen and (max-width: 525px) {
-  .container {
-    top: 17em;
-  }
-}
+
 .centered{
   text-align: center;
 }
@@ -60,61 +59,33 @@ p{
   color: white !important;
 }
 .aboutContent{
-  margin: 10px auto 0 auto;
-  width: 45%;
+  margin: 2em auto 0 auto;
+  width: 75%;
+}
+.projectContent{
+  margin: 2em auto;
+  width: 40%;
 }
 @media only screen and (max-width: 767px) {
+  .project-overflow{
+    overflow: auto;
+    max-height: 360px; 
+    position: relative;
+  }
   .aboutGallery {
     display: none !important;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 767px) {
   .aboutContent {
     width: 55%;
   }
 }
-@media only screen and (max-width: 1245px) {
+@media only screen and (min-width: 1400px) {
   .aboutContent {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .aboutContent {
-    width: 65%;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .aboutContent {
-    width: 75%;
-  }
-}
-.projectContent{
-  margin: 0 auto ;
-  width: 30%;
-}
-@media only screen and (max-width: 1400px) {
-  .projectContent {
     width: 35%;
   }
-}
-@media only screen and (max-width: 1245px) {
   .projectContent {
-    width: 40%;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .projectContent {
-    width: 45%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .projectContent {
-    width: 40%;
-    margin-top: 1em;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .projectContent {
-    width: 50%;
+    width: 35%;
   }
 }

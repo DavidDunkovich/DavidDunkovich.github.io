@@ -32,11 +32,7 @@ class Projects extends Component {
     return (
       <div className="projectContent">
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
-        {/* 
-          For when you need some scrolling action w/ too many projects
-          style={{overflow: 'auto', maxHeight: 575, position: 'relative', left: '12px' }}     
-        */}
-        <Grid columns={3} stackable centered style={{position: 'relative', left: '1px' }}>
+        <Grid columns={3} stackable centered className="project-overflow" style={{position: 'relative', left: '1px'}}>
            <Grid.Row>
                 <Grid.Column style={{padding: '.5rem'}}>
                   <figure className="projectImage">
@@ -123,8 +119,9 @@ class Projects extends Component {
                       to later input it into an excel document, this web application is used during home showings to 
                       collect that same customer information from a tablet which is then stored into a database and used
                       to send an automated email to the customer. On top of that, there is an admin side to the app in which 
-                      all customer information can be neatly accessed, searched, and sorted.'
-                      link={false}
+                      all customer information can be neatly accessed, searched, and sorted. Soon after, Shiny Key reached out to also
+                      create a website for them.'
+                      link='http://shinykey.herokuapp.com/'
                       />
                   </figure>
                 </Grid.Column>

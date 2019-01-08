@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Transition, List, Divider } from 'semantic-ui-react';
+import { Transition, List, Divider, Image, Header } from 'semantic-ui-react';
 import AboutGallery from './AboutGallery';
 
 class About extends Component {
@@ -10,44 +10,42 @@ class About extends Component {
     return (
         <Transition visible={this.props.visible} animation='fade right' duration={500}>
         <div className="aboutContent">
-            <p>
-                I will be graduating from the
-                <span className="accent accent-weight"> University of Wisconsin - Oshkosh</span> with a B.S. degree in
-                <span className="accent accent-weight"> Computer Science</span> and an emphasis in 
-                <span className="accent accent-weight"> Software Engineering</span> in 
-                <span className="accent accent-weight"> December, 2018</span>.
+            <Divider/>
+            <Image centered src='images/liberty_logo.png' style={{marginBottom: '2em', width: '200px'}}/>
+                <p style={{display:'inline-block', width:'60%'}}>
+                    Starting full-time as a software developer
+                </p>
+                <p style={{float: 'right', textAlign:'right', width:'40%', fontSize: '16px'}}>
+                    <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>June, 2019</span>
+                </p>
+                <p style={{display:'inline-block', width:'60%'}}>
+                    Completed 2nd summer software engineering internship
+                </p>
+                <p style={{float: 'right', textAlign:'right', width:'40%', fontSize: '16px'}} className="accent">
+                    <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>Summer, 2018</span>
+                </p>
+                <p style={{display:'inline-block', width:'60%' }}>
+                    Completed 1st software engineering summer internship
+                </p>
+                <p style={{float: 'right', textAlign:'right', width:'40%', fontSize: '16px'}} className="accent">
+                    <span style={{color:'#3066BE'}}>Wausau, WI</span> | <span style={{color:'#48A9A6'}}>Summer, 2017</span>
+                </p>
+            <Divider/>
+            <Image centered src='images/college_logo.png' style={{marginTop: '2em', marginBottom: '2em', width: '160px'}}/>
+            <p style={{display:'inline-block', width:'60%' }}>
+                Graduated with a B.S. degree in Computer Science and an emphasis in Software Engineering
             </p>
-            <p>
-                I've had two summer software engineering internships at a Fortune 100 company, 
-                <span className="accent accent-weight" > Liberty Mutual Insurance</span>,
-                where I had the opportunity to:    
+            <p style={{float: 'right', textAlign:'right', width:'40%', fontSize: '16px'}} className="accent">
+                <span style={{color:'#3066BE'}}>Oshkosh, WI</span> | <span style={{color:'#48A9A6'}}>December, 2018</span>
             </p>
-            
-                <List className="aboutList">
-                    <List.Item>
-                        <List.Icon name='code' className="accent" size="large"/>
-                        <List.Content>implement a full-stack web application</List.Content>
-                    </List.Item>
-                    <List.Item>
-                        <List.Icon name='trophy' className="accent" size="large"/>
-                        <List.Content>
-                            win First Place and People's Choice Awards in their first intern Hackathon
-                        </List.Content>
-                    </List.Item>
-                    <List.Item>
-                        <List.Icon name='users' className="accent" size="large"/>
-                        <List.Content>establish a leadership role</List.Content>
-                    </List.Item>
-                </List>
-             
-            <p>
-                Besides nerding out, I also enjoy
-                <span className="accent accent-weight"> skiing</span>,
-                <span className="accent accent-weight"> hiking</span>, and
-                <span className="accent accent-weight"> traveling</span>.
+            <Divider/>
+            <Image centered src='images/wak_logo.png' style={{marginTop: '2em', marginBottom: '2em', width: '200px'}}/>
+            <p style={{display:'inline-block', width:'60%' }}>
+                Began studying Computer Science and taking general education courses
             </p>
-            <Divider hidden />
-            <AboutGallery/>   
+            <p style={{float: 'right', textAlign:'right', width:'40%', fontSize: '16px'}} className="accent">
+                <span style={{color:'#3066BE'}}>Waukesha, WI</span> | <span style={{color:'#48A9A6'}}>September, 2014</span>
+            </p>
         </div>
         </Transition>
     );

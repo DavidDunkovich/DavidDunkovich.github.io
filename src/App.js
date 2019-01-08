@@ -8,7 +8,7 @@ import { Header } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
-    activeItem: false,
+    activeItem: 'About',
     switching: false
   };
 
@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div >
         <div className={activeItem ? "mainHeader" : "initialHeader"}>
-          <Header as="h1" textAlign="center" content="David Dunkovich" />
+          <Header as="h1" textAlign="center" >David <br/> Dunkovich</Header>
           <Navigation activeItem={this.state.activeItem} handleItemClick={this.handleItemClick}/>
           <SocialMediaLinks/>
         </div>
