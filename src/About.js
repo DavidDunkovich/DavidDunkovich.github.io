@@ -31,7 +31,7 @@ class About extends Component {
                     <span style={{color:'#3066BE'}}>Wausau, WI</span> | <span style={{color:'#48A9A6'}}>Summer, 2017</span>
                 </p>
             <Divider/>
-            <Image centered src='images/college_logo.png' style={{marginTop: '2em', marginBottom: '2em', width: '160px'}}/>
+            <Image centered src='images/college_logo.png' style={{marginTop: '2em', marginBottom: '2em', width: '180px'}}/>
             <p style={{display:'inline-block', width:'60%' }}>
                 Graduated with a B.S. degree in Computer Science and an emphasis in Software Engineering
             </p>
