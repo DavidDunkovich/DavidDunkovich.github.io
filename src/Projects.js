@@ -90,7 +90,7 @@ class Projects extends Component {
                       waste a week&apos;s worth of time during this process. Our application is similar
                       to a shopping cart in the way that the user can add whichever programs and security groups they need to their cart.
                       Once they&apos;re finished, all of the programs would begin installing and all of the security group access forms would
-                      be sent out. Furthermore, a manager could do this work prior, generate a link on the final screen of our app, and share 
+                      be sent out. Furthermore, a manager could do this work prior, generate a link on the final screen of our app, and share
                       the link to their new employees, saving them even more time. In total, the app could save hundreds
                       of thousands of dollars per hiring cycle.'
                       link={false}
@@ -114,11 +114,11 @@ class Projects extends Component {
                       company='Freelance'
                       location='Fox Valley, WI'
                       description='Shiny Key Realty is a real estate company that specializes in residential real estate in Appleton, Wisconsin.'
-                      description2='Co-Owner of Shiny Key Realty expressed his interest in simplifying the process to manage 
+                      description2='Co-Owner of Shiny Key Realty expressed his interest in simplifying the process to manage
                       customer information during house showings. Rather than requiring the customer to physically write it down and for Ryan
-                      to later input it into an excel document, this web application is used during home showings to 
+                      to later input it into an excel document, this web application is used during home showings to
                       collect that same customer information from a tablet which is then stored into a database and used
-                      to send an automated email to the customer. On top of that, there is an admin side to the app in which 
+                      to send an automated email to the customer. On top of that, there is an admin side to the app in which
                       all customer information can be neatly accessed, searched, and sorted. Soon after, Shiny Key reached out to also
                       create a website for them.'
                       link='http://shinykey.herokuapp.com/'
