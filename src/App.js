@@ -13,12 +13,12 @@ class App extends Component {
   };
 
   handleItemClick = (e, { name }) => {
-    const {activeItem} = this.state;
+    const { activeItem } = this.state;
     if(name === activeItem){
       this.setState({ activeItem: false });
     }
     else{
-      this.setState({ activeItem: name, switching: true});
+      this.setState({ activeItem: name, switching: true });
       setTimeout(() => { 
         this.setState({
            switching: false 
@@ -28,9 +28,9 @@ class App extends Component {
   };
 
   render() {
-    const {activeItem, switching} = this.state;
+    const { activeItem, switching } = this.state;
     return (
-      <div >
+      <div>
         <div className={activeItem ? "mainHeader" : "initialHeader"}>
           <Header as="h1" textAlign="center" >David <br/> Dunkovich</Header>
           <Navigation activeItem={this.state.activeItem} handleItemClick={this.handleItemClick}/>
