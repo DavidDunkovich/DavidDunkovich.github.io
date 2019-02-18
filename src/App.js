@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import About from "./About";
 import Projects from "./Projects";
 import SocialMediaLinks from "./SocialMediaLinks";
-import { Header, Image } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
