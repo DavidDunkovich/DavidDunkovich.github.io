@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import About from "./About";
 import Projects from "./Projects";
 import SocialMediaLinks from "./SocialMediaLinks";
-import { Header } from 'semantic-ui-react';
+import { Header, Image } from 'semantic-ui-react';
 
 class App extends Component {
   state = {
@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div >
         <div className={activeItem ? "mainHeader" : "initialHeader"}>
-          <Header as="h1" textAlign="center" >David <br/> Dunkovich</Header>
+          <Image centered src='images/name_personal.png'/>
           <Navigation activeItem={this.state.activeItem} handleItemClick={this.handleItemClick}/>
           <SocialMediaLinks/>
         </div>
