@@ -9,19 +9,19 @@ const About = props => (
             <Divider/>
             <Image centered src='images/liberty_logo.png' style={{marginBottom: '2em', width: '210px'}}/>
                 <p style={{display:'inline-block', width:'50%'}}>
-                    Starting full-time as a software developer
+                    Starting full-time as a Software Engineering
                 </p>
                 <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}}>
                     <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>June, 2019</span>
                 </p>
                 <p style={{display:'inline-block', width:'50%'}}>
-                    Completed 2nd summer software engineering internship
+                    Completed 2nd summer Software Engineering internship
                 </p>
                 <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}} className="accent">
                     <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>Summer, 2018</span>
                 </p>
                 <p style={{display:'inline-block', width:'50%' }}>
-                    Completed 1st summer software engineering internship
+                    Completed 1st summer Software Engineering internship
                 </p>
                 <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}} className="accent">
                     <span style={{color:'#3066BE'}}>Wausau, WI</span> | <span style={{color:'#48A9A6'}}>Summer, 2017</span>
