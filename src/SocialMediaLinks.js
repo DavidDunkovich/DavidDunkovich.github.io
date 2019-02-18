@@ -28,7 +28,7 @@ class About extends Component {
         <Popup
             trigger={
               <div style={{display: 'inline-block'}}>
-              <CopyToClipboard text="dunkovichd@yahoo.com">
+              <CopyToClipboard text="dunkovichd@gmail.com">
                 <Button circular color='google plus' icon='mail' />
               </CopyToClipboard>
               </div>
