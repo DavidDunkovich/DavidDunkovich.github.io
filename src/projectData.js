@@ -66,7 +66,7 @@ const projectData =
 },
 {
   type: 'Website/Web App',
-  name: 'Shiny Key Realty',
+  name: 'Moore and Cross, Attorneys at Law',
   logo: 'images/moorecrosslogo.jpg',
   logoAlt: 'Moore and Cross Logo',
   image: 'images/moorecrosslogo.jpg',
@@ -84,7 +84,7 @@ const projectData =
 },
 {
   type: 'Website/Web App',
-  name: 'Shiny Key Realty',
+  name: 'Balance Youth Sports',
   logo: 'images/byslogo.jpg',
   logoAlt: 'Balance Youth Sports Logo',
   image: 'images/bys2.jpg',
