@@ -54,7 +54,7 @@ const projectData =
     company: 'Freelance',
     location: 'Fox Valley, WI',
     jobRole: 'Full Stack Developer - Maintainer',
-    link: 'http://shinykey.herokuapp.com/',
+    link: 'https://www.shinykeyrealty.com/',
     description: `Shiny Key Realty is a real estate company that specializes in residential real estate in Appleton, Wisconsin.`,
     description2: `Co-Owner of Shiny Key Realty expressed his interest in simplifying the process to manage
     customer information during house showings. Rather than requiring the customer to physically write it down and for Ryan
@@ -74,7 +74,6 @@ const projectData =
   company: 'Freelance',
   location: 'Edwardsville, WI',
   jobRole: 'Full Stack Developer - Maintainer',
-  link: 'http://moorecross.com',
   description: `Moore & Cross, attourneys at law, was formed in 2018 under partners
   Austin Moore and Casey Cross. Both founding partners attended Northern Illinois University Law School and
   eventually wanted to start their own practice.`,
