@@ -20,7 +20,7 @@ function Menu({ activeTab, setActiveTab }){
   return (
     <div id="menu" onClick={(e) => setActiveTabHandler(e, setActiveTab)}>
       {menuItems.map((item) => (
-        <h2 className={getClassName(activeTab, item)}>{item}</h2>
+        <h2 key={item} className={getClassName(activeTab, item)}>{item}</h2>
       ))}
     </div>
   )

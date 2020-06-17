@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Card, Image } from 'semantic-ui-react';
 
 function setActiveItemHandler({ target }, setActiveTab) {
-  console.log(target.className)
-  if (target.className.includes("card")) {
+  const classes = target.className;
+  if (classes.includes('inactive')) {
     setActiveTab(target.id);
+  } else {
+    setActiveTab(null);
   }
 }
 
@@ -16,10 +17,16 @@ const careers = [
   {
     id: 'aws',
     src: "images/aws.png",
+    title: 'Frontend Engineer',
+    company: 'Amazon EKS',
+    tenure: 'Oct 2020 - Present',
   },
   {
     id: 'lm',
     src: "images/LibertyMutual.jpg",
+    title: 'Fullstack Engineer',
+    company: 'Liberty Mutual Insurance',
+    tenure: 'Jun 2018 - Oct 2020',
   },
 ];
 
@@ -27,11 +34,22 @@ function Content({ activeItem, setActiveItem }){
   
   return (
     <div id="contentSection" onClick={(e) => setActiveItemHandler(e, setActiveItem)}>
-      {careers.map((item) => (
-        <div id={item.id} className={`card ${getClassName(activeItem, item.id)}`}>
-          <img className="cardImg" src={item.src} />
-        </div>
-      ))}
+      {careers.map((item) => {
+        const isActive = getClassName(activeItem, item.id);
+        return (
+          <div key={item.id} id={item.id} className={`card ${isActive}`}>
+            <img className="cardImg" src={item.src} />
+            <div className={`expandedCard ${isActive}`}>
+              <div>
+                <h3>{item.title}</h3>
+                <div id="company">{item.company}</div>
+              </div>
+              <div id="tenure">
+                {item.tenure}
+              </div>
+            </div>
+          </div>
+        )})}
     </div>
   )
 };
