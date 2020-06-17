@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Transition, Divider, Image } from 'semantic-ui-react';
-// import AboutGallery from './AboutGallery';
 
-const About = props => (
+export default props => (
     <Transition visible={props.visible} animation='fade right' duration={500}>
         <div className="aboutContent">
             <Divider/>
@@ -17,13 +16,13 @@ const About = props => (
                 <p style={{display:'inline-block', width:'50%'}}>
                     Completed 2nd summer Software Engineering internship
                 </p>
-                <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}} className="accent">
+                <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}}>
                     <span style={{color:'#3066BE'}}>Seattle, WA</span> | <span style={{color:'#48A9A6'}}>Summer, 2018</span>
                 </p>
                 <p style={{display:'inline-block', width:'50%' }}>
                     Completed 1st summer Software Engineering internship
                 </p>
-                <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}} className="accent">
+                <p style={{float: 'right', textAlign:'right', width:'50%', fontSize: '16px'}}>
                     <span style={{color:'#3066BE'}}>Wausau, WI</span> | <span style={{color:'#48A9A6'}}>Summer, 2017</span>
                 </p>
             <Divider/>
@@ -44,6 +43,4 @@ const About = props => (
             </p>
         </div>
     </Transition>
-)
-
-export default About;
+);

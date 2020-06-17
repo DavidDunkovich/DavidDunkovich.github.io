@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Nunito|Rock+Salt');
 body{
   background-color: #FFFFFF !important;
+  overflow-y: scroll;
 }
 h2, h3, h4, h5, h6, p{
   font-family: Nunito !important;
@@ -88,4 +89,10 @@ p{
   .projectContent {
     width: 35%;
   }
+}
+.ui.text.menu .item{
+  color: black !important;
+}
+.ui.text.menu .active.item {
+  color: #00ab44 !important;
 }

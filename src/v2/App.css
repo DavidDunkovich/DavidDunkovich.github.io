@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #152028;
+  color: #F1F2EB;
+}
+
+#root {
+  height: 100%;
+}
+#app {
+  height: 100%;
+  padding: 36px 144px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+#contact {
+  display: flex;
+}
+
+#contact-img {
+  display: flex;
+  width: 162px;
+}
+
+#contact-info {
+  line-height: 1.5;
+}
+
+#headshot {
+  border-radius: 24px;
+  width: 120px;
+  text-align: center;
+}
+
+#name {
+ color: #E8E1A2;
+}
+
+/* Menu */
+
+#menu {
+  display: flex;
+  flex-flow: column;
+}
+
+#menu h2 {
+  cursor: pointer;
+  padding: 12px 12px 12px 0;
+  margin: 6px 0px;
+  font-size: 18px;
+  width: 150px;
+  
+  background-image: linear-gradient(0, #809BCE 0%, #EAC4D5 100%);
+  background-repeat: no-repeat;
+  background-size: 0 .2em;
+  background-position: 0 90%;
+  transition: background-size 0.25s ease-in;
+}
+
+#menu h2:hover:not(.active) {
+  background-size: 25% .2em;
+}
+
+#menu .active {
+  background-size: 90% .4em;
+}
+
+/* Content */
+
+#content {
+  display: flex;
+}
+
+#contentSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.card {
+  width: 125px;
+  height: 125px;
+  position: relative;
+  background-color: #f1f2eb;
+  border-radius: 24px;
+  margin: 12px;
+  cursor: pointer;
+
+  transition: box-shadow 0.25s ease-in, width .5s ease-in;
+  text-align: center;
+}
+
+.cardImg {
+  width: 60px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Used for event bubbling */
+  pointer-events: none;
+
+  transition: top .5s ease-in, left .5s ease-in, transform .5s ease-in, width .5s ease-in, margin .5s ease-in;
+}
+
+.card.active {
+  width: 100%;
+}
+
+.card.active .cardImg {
+  width: 30px;
+
+  margin: 12px;
+  top: 0;
+  left: 0;
+  transform: translate(0);
+  pointer-events: none;
+}
+
