@@ -12,8 +12,8 @@ function setActiveTabHandler({ target }, setActiveTab) {
 
 const menuItems = [
   "Careers",
+  "Academics",
   "Freelance",
-  "Academics"
 ];
 
 function Menu({ activeTab, setActiveTab }){

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.scss';
 import Header from './Header';
 import Menu from './Menu';
-import Content from './Content';
+import Careers from './Careers';
 
 function App(){
   const [activeTab, setActiveTab] = useState('Careers');
@@ -12,7 +12,8 @@ function App(){
       <Header />
       <div id="content">
         <Menu activeTab={activeTab} setActiveTab={setActiveTab} />
-        <Content activeItem={activeItem} setActiveItem={setActiveItem} />
+        {activeTab === 'Careers' && <Careers activeItem={activeItem} setActiveItem={setActiveItem} />}
+
       </div>
     </div>
   )

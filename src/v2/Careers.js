@@ -39,35 +39,34 @@ const careers = [
   },
 ];
 
-function Content({ activeItem, setActiveItem }){
-  
+function Careers({ activeItem, setActiveItem }){
   return (
     <div id="contentSection" onClick={(e) => setActiveItemHandler(e, setActiveItem)}>
       {careers.map((item) => {
         const isActive = getClassName(activeItem, item.id);
         return (
           <div key={item.id} id={item.id} className={`card ${isActive}`}>
-            <div className="unclickable">
-              <img className="cardImg" src={item.src} />
-              <div className={`expandedCard ${isActive}`}>
-                <div className="row1">
-                  <div>
-                    <h3>{item.title}</h3>
-                    <div id="company">{item.company}</div>
+              <div className="unclickable">
+                <img className="cardImg" src={item.src} />
+                <div className={`expandedCard ${isActive}`}>
+                  <div className="row1">
+                    <div>
+                      <h3>{item.title}</h3>
+                      <div id="company">{item.company}</div>
+                    </div>
+                    <div>{item.tenure}</div>
                   </div>
-                  <div>{item.tenure}</div>
+                  <ul className="achievements">
+                      {item.achievements.map((x, i) => (
+                        <li key={i} className="achievement">{x}</li>
+                      ))}
+                    </ul>
                 </div>
-                <ul className="achievements">
-                    {item.achievements.map((x) => (
-                      <li className="achievement">{x}</li>
-                    ))}
-                  </ul>
               </div>
-            </div>
           </div>
         )})}
     </div>
   )
 };
 
-export default Content;
+export default Careers;
