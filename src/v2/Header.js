@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Popup } from 'semantic-ui-react';
+import { Popup, Button } from 'semantic-ui-react';
 
 function Header(){
   
@@ -14,16 +14,17 @@ function Header(){
         <div id="contact-info">
           <Popup
               trigger={
-                <div style={{cursor: "pointer"}}>
+                <span style={{marginRight: '5px'}}>
                   <CopyToClipboard text="dunkovichd@gmail.com">
-                    <span>dunkovichd@gmail.com</span>
+                    <Button circular color='google plus' icon='mail' />
                   </CopyToClipboard>
-                </div>
+                </span>
               }
               content='Email copied'
               on='click'
+              size="tiny"
           />
-          <a href="https://www.linkedin.com/in/daviddunkovich/" target="_blank">LinkedIn</a>
+          <Button circular color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/daviddunkovich/" target="_blank"/>
         </div>
       </div>
     </div>

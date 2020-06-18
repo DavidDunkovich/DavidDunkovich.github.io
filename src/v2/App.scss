@@ -1,0 +1,174 @@
+$color1: #E8E1A2;
+$color2: #809BCE;
+$color3: #EAC4D5;
+$transitionTime: .3s;
+
+/* Used for event bubbling */
+.unclickable {
+  pointer-events: none;
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #152028;
+  color: #F1F2EB;
+}
+
+#app {
+  width: 80vw;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Header */
+
+#contact {
+  display: flex;
+}
+
+#contact-img {
+  display: flex;
+  width: 162px;
+}
+
+#contact-info {
+  line-height: 1.5;
+}
+
+#headshot {
+  border-radius: 24px;
+  width: 120px;
+  text-align: center;
+}
+
+#name {
+ color: $color1;
+}
+
+/* Menu */
+
+#menu {
+  display: flex;
+  flex-flow: column;
+
+  h2 {
+    cursor: pointer;
+    padding: 12px 12px 12px 0;
+    margin: 6px 0px;
+    font-size: 18px;
+    width: 150px;
+    
+    background-image: linear-gradient(0, #809BCE 0%, #EAC4D5 100%);
+    background-repeat: no-repeat;
+    background-size: 0 .2em;
+    background-position: 0 90%;
+    transition: background-size $transitionTime ease;
+  }
+
+  h2:hover:not(.active) {
+    background-size: 25% .2em;
+  }
+
+  .active {
+    background-size: 90% .4em;
+  }
+}
+
+/* Content */
+
+#content {
+  display: flex;
+}
+
+#contentSection {
+  display: flex;
+  height: 450px;
+}
+
+.card {
+  width: 125px;
+  height:125px;
+  position: relative;
+  background-color: #f1f2eb;
+  border-radius: 24px;
+  margin: 12px;
+  cursor: pointer;
+
+  transition: all $transitionTime ease, width $transitionTime ease $transitionTime, height $transitionTime ease $transitionTime;
+
+  &.active {
+    width: 450px;
+    height: 100%;
+    transition: all $transitionTime ease $transitionTime;
+  }
+
+  &.active .cardImg {
+    width: 50px;
+    margin: 24px 0 0 24px;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+  
+    transition: all $transitionTime ease;
+  }
+}
+
+.cardImg {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: all $transitionTime ease .5s;
+}
+
+/* Expanded card */
+
+.expandedCard {
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: all $transitionTime ease;
+  margin: 18px 24px 18px 90px;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+
+    transition: all $transitionTime ease .5s;
+  }
+
+  h3, h4, h5 {
+    margin: 0;
+  }
+
+  .company {
+    margin: 0;
+  }
+
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .achievements {
+    padding: 0;
+  }
+
+  .achievement {
+    padding: 0 15px 10px 0;
+  }
+
+  .achievement:last-child {
+    padding: 0;
+  }
+}
