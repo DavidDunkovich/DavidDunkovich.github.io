@@ -6,7 +6,7 @@ import Careers from './Careers';
 
 function App(){
   const [activeTab, setActiveTab] = useState('Careers');
-  const [activeItem, setActiveItem] = useState('aws');
+  const [activeItem, setActiveItem] = useState();
   return (
     <div id="app">
       <Header />
