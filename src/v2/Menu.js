@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function getClassName(activeTab, thisTab) {
   return activeTab === thisTab ? 'active' : 'inactive';
@@ -13,7 +13,7 @@ function setActiveTabHandler({ target }, setActiveTab) {
 const menuItems = [
   "Careers",
   "Academics",
-  "Freelance",
+  // "Freelance",
 ];
 
 function Menu({ activeTab, setActiveTab }){

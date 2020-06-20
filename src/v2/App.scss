@@ -93,6 +93,19 @@ body {
   height: 420px;
 }
 
+#academics {
+  display: flex;
+  height: 75px;
+}
+
+.academicsCard.active {
+  width: 350px !important;
+
+  .cardImg {
+    margin: 20px 0 0 24px !important;
+  }
+}
+
 .card {
   width: 125px;
   height:125px;

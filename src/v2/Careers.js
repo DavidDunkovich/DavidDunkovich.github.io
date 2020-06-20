@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function setActiveItemHandler({ target }, setActiveTab) {
-  if (target.id === 'aws' || target.id === 'lm') {
-    target.className.includes('inactive') ? setActiveTab(target.id) : setActiveTab(null);
+function setActiveItemHandler({ target }, setActiveItem) {
+  const availableItems = new Set(['aws', 'lm']);
+  if (availableItems.has(target.id)) {
+    target.className.includes('inactive') ? setActiveItem(target.id) : setActiveItem(null);
   }
 }
 
@@ -14,6 +15,7 @@ const careers = [
   {
     id: 'aws',
     src: "images/aws.png",
+    alt: "aws logo",
     title: 'Frontend Engineer',
     company: 'Amazon EKS',
     tenure: 'Oct 2019 - Present',
@@ -28,6 +30,7 @@ const careers = [
   {
     id: 'lm',
     src: "images/LibertyMutual.jpg",
+    alt: "liberty mutual logo",
     title: 'Fullstack Engineer',
     company: 'Liberty Mutual Insurance',
     tenure: 'Jun 2018 - Oct 2019',
@@ -47,7 +50,7 @@ function Careers({ activeItem, setActiveItem }){
         return (
           <div key={item.id} id={item.id} className={`card ${isActive}`}>
               <div className="unclickable">
-                <img className="cardImg" src={item.src} />
+                <img className="cardImg" alt={item.alt} src={item.src} />
                 <div className={`expandedCard ${isActive}`}>
                   <div className="row1">
                     <div>

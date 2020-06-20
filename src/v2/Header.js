@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Popup, Button } from 'semantic-ui-react';
 
@@ -7,7 +7,7 @@ function Header(){
   return (
     <div id="contact">
       <div id="contact-img">
-        <img id="headshot" src="headshot.jpg" />
+        <img id="headshot" alt="profile headshot" src="headshot.jpg" />
       </div>
       <div>
         <h1 id="name">David Dunkovich</h1>
