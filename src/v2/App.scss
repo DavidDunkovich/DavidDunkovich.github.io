@@ -39,6 +39,7 @@ body {
   width: 162px;
 }
 
+
 #contact-info {
   line-height: 1.5;
 }
@@ -183,5 +184,72 @@ body {
 
   .achievement:last-child {
     padding: 0;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  #app {
+    width: 90vw;
+  }
+
+  #menu {
+    .active {
+      background-size: 75% .4em;
+    }
+  }
+
+  #contentSection, #academics {
+    display: block;
+    height: auto;
+  }
+
+  .card {
+    margin: 0;
+
+    &.active {
+      width: 185px;
+
+      .cardImg {
+        margin: 0 !important;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    .img-container {
+      margin-top: 20px;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .expandedCard {
+    margin: 10px 0px 0px 15px;
+    .row1 {
+      display: block;
+      padding-top: 75px;
+    }
+
+    .achievements {
+      margin-left: 15px;
+    }
+  }
+
+  /* Special exception for LM logos height */
+  #lm {
+    .expandedCard {
+      .row1 {
+        padding-top: 100px;
+      }
+    }
+  }
+
+  .academicsCard {
+    &.active {
+      width: 185px !important;
+      height: 150px;
+    }
   }
 }
