@@ -35,7 +35,7 @@ body {
 
 #contact-img {
   display: flex;
-  width: 190px;
+  width: 155px;
 }
 
 
@@ -45,7 +45,7 @@ body {
 
 #headshot {
   border-radius: 24px;
-  height:120px;
+  height: 125px;
 }
 
 #name {
@@ -207,6 +207,10 @@ body {
   .card-container {
     width: 100%;
     margin-bottom: 12px;
+  }
+
+  #contact-img {
+    width: 190px;
   }
 
   #content {
