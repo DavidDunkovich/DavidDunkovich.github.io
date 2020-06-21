@@ -21,9 +21,9 @@ const careers = [
     tenure: 'Oct 2019 - Present',
     achievements: [
       'Cross collaborated with multiple teams and product managers to deliver new features to thousands of users over 20 regions.',
-      'Maintained exemplary operations and metrics (increased overall automated test coverage by over 50%) to ensure website availability.',
+      'Maintained exemplary operations and metrics by increasing overall automated test coverage by over 50% to ensure website availability.',
       'Converted multiple manual pipelines to CICD through creating integration tests and alarms, saving approximately 20 hours of developer time monthly.',
-      'Automated internationalization of strings saving hours of developer time per commit.',
+      'Automated internationalization of strings saving hours of developer time per code change.',
       'Documented steps for critical job functions such as expanding to new regions and onboarding new frontend engineers.'
     ]
   },
@@ -36,8 +36,8 @@ const careers = [
     tenure: 'Jun 2018 - Oct 2019',
     achievements: [
       'Engineered a React analytics dashboard that tracks user flow within a web app assisting UX designers in raising the average daily users from 50 to 200.',
-      'Implemented a user management portal that allows user roles/permissions to be easily edited for a new, external facing app using React and Spring/MongoDB.',
-      'Won 1st place in their anual hackathon innovating a web app that reduces excessive work space set-up time for new hires within all departments of the company.',
+      'Implemented a user management portal that allows user roles and permissions to be easily edited for an external facing app using React and Spring/MongoDB.',
+      'Won 1st place in their annual hackathon innovating a web app that reduces excessive work space set-up time for new hires within all departments of the company.',
     ],
   },
 ];
