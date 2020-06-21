@@ -24,7 +24,7 @@ const careers = [
       'Maintained exemplary operations and metrics (increased overall automated test coverage by over 50%) to ensure website availability.',
       'Converted multiple manual pipelines to CICD through creating integration tests and alarms, saving approximately 20 hours of developer time monthly.',
       'Automated internationalization of strings saving hours of developer time per commit.',
-      'Documented steps for critical job functions such as expanding to new regions or onboard new frontend engineers.'
+      'Documented steps for critical job functions such as expanding to new regions and onboarding new frontend engineers.'
     ]
   },
   {
@@ -48,7 +48,8 @@ function Careers({ activeItem, setActiveItem }){
       {careers.map((item) => {
         const isActive = getClassName(activeItem, item.id);
         return (
-          <div key={item.id} id={item.id} className={`card ${isActive}`}>
+          <div className="card-container" key={item.id} >
+          <div id={item.id} className={`card ${isActive}`}>
               <div className="unclickable">
                 <img className="cardImg" alt={item.alt} src={item.src} />
                 <div className={`expandedCard ${isActive}`}>
@@ -66,6 +67,7 @@ function Careers({ activeItem, setActiveItem }){
                     </ul>
                 </div>
               </div>
+          </div>
           </div>
         )})}
     </div>

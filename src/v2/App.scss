@@ -11,7 +11,6 @@ $transitionTime: .3s;
 html,
 body {
   margin: 0;
-  overflow: hidden;
 }
 
 body {
@@ -71,7 +70,7 @@ body {
     background-repeat: no-repeat;
     background-size: 0 .2em;
     background-position: 0 90%;
-    transition: background-size $transitionTime ease;
+    transition: background-size $transitionTime;
   }
 
   h2:hover:not(.active) {
@@ -79,7 +78,7 @@ body {
   }
 
   .active {
-    background-size: 90% .4em;
+    background-size: 80% .4em;
   }
 }
 
@@ -91,7 +90,8 @@ body {
 
 #contentSection {
   display: flex;
-  height: 420px;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 #academics {
@@ -108,20 +108,21 @@ body {
 }
 
 .card {
+  overflow: hidden;
   width: 125px;
-  height:125px;
+  height: 125px;
   position: relative;
   background-color: #f1f2eb;
   border-radius: 24px;
-  margin: 12px;
+  margin-right: 12px;
   cursor: pointer;
 
-  transition: all $transitionTime ease, width $transitionTime ease $transitionTime, height $transitionTime ease $transitionTime;
+  transition: all $transitionTime, width $transitionTime $transitionTime, height $transitionTime;
 
   &.active {
     width: 450px;
     height: 100%;
-    transition: all $transitionTime ease $transitionTime;
+    transition: all $transitionTime .6s, width $transitionTime $transitionTime;
   }
 
   &.active .cardImg {
@@ -131,7 +132,15 @@ body {
     left: 0;
     transform: translate(0);
   
-    transition: all $transitionTime ease;
+    transition: all $transitionTime;
+  }
+}
+
+#academics {
+  .card {
+    &.active {
+      transition: all $transitionTime $transitionTime, width $transitionTime $transitionTime, height $transitionTime;
+    }
   }
 }
 
@@ -142,7 +151,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  transition: all $transitionTime ease .5s;
+  transition: all $transitionTime .5s;
 }
 
 /* Expanded card */
@@ -151,14 +160,14 @@ body {
   color: black;
   visibility: hidden;
   opacity: 0;
-  transition: all $transitionTime ease;
+  transition: all $transitionTime;
   margin: 18px 24px 18px 90px;
 
   &.active {
     visibility: visible;
     opacity: 1;
 
-    transition: all $transitionTime ease .5s;
+    transition: all $transitionTime .5s;
   }
 
   h3, h4, h5 {
@@ -187,69 +196,65 @@ body {
   }
 }
 
+
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
   #app {
-    width: 90vw;
+    width: 80vw;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
   }
 
-  #menu {
-    .active {
-      background-size: 75% .4em;
-    }
+  .card-container {
+    width: 100%;
+    margin-bottom: 12px;
   }
 
-  #contentSection, #academics {
+  #content {
+    display:block;
+  }
+
+  #academics {
     display: block;
-    height: auto;
+
+    .card {
+      margin-bottom: 12px;
+    }
   }
 
   .card {
-    margin: 0;
-
     &.active {
-      width: 185px;
+      width: 100%;
 
       .cardImg {
-        margin: 0 !important;
-        top: 25px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        top: 5px;
       }
-    }
-
-    .img-container {
-      margin-top: 20px;
-      padding-top: 20px;
-      text-align: center;
     }
   }
 
   .expandedCard {
     margin: 10px 0px 0px 15px;
+    padding-bottom: 20px;
     .row1 {
       display: block;
-      padding-top: 75px;
+      margin: 0 0 25px 80px;
+      padding-top: 15px;
     }
 
     .achievements {
-      margin-left: 15px;
+      margin: 10px 15px 0 15px;
     }
   }
 
-  /* Special exception for LM logos height */
-  #lm {
-    .expandedCard {
-      .row1 {
-        padding-top: 100px;
-      }
-    }
+  #academics, #contentSection {
+    margin-top: 10px;
   }
 
   .academicsCard {
+    
     &.active {
-      width: 185px !important;
-      height: 150px;
+      width: 100% !important;
+      height: 125px;
     }
   }
 }
