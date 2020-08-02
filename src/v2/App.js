@@ -4,8 +4,10 @@ import Header from './Header';
 import Menu from './Menu';
 import { Card, Drawer } from 'antd';
 
+const maxScreenSize = 600;
+
 function App(){
-  const [activeTab, setActiveTab] = useState('Projects');
+  const [activeTab, setActiveTab] = useState('Careers');
   const [activeData, setActiveData] = useState(null);
 
   function setActiveTabHandler({ target }) {
@@ -70,7 +72,7 @@ function App(){
           style={{ position: 'absolute' }}
           placement="left"
           onClose={() => setActiveData(null)}
-          width={"80%"}
+          width={maxScreenSize > 600 ? '80%' : '100%'}
           className="item-drawer"
         >
           {activeData && (
@@ -78,7 +80,7 @@ function App(){
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
                 <div>
                   <h3>{activeData.title}</h3>
-                  {activeData.link && <a href={activeData.link} target="_blank">View website</a>}
+                  {activeData.link && <a href={activeData.link} target="_blank" rel="noopener noreferrer">View website</a>}
                   <div>{activeData.stack}</div>
                   <div>{activeData.tenure}</div>
                 </div>
