@@ -1,16 +1,15 @@
 import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Popup, Button } from 'semantic-ui-react';
+import { Card } from 'antd';
 
 function Header(){
   
   return (
-    <div id="contact">
-      <div id="contact-img">
-        <img id="headshot" alt="profile headshot" src="headshot.jpg" />
-      </div>
+    <Card id="contact">
+      <img id="headshot" alt="profile headshot" src="headshot.jpg" />
       <div>
-        <h1 id="name">David Dunkovich</h1>
+        <h2 id="name">David Dunkovich</h2>
         <div id="contact-info">
           <Popup
               trigger={
@@ -27,7 +26,7 @@ function Header(){
           <Button circular color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/daviddunkovich/" target="_blank"/>
         </div>
       </div>
-    </div>
+    </Card>
   )
 };
 

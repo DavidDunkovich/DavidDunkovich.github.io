@@ -1,12 +1,10 @@
-$color1: #E8E1A2;
+@import '~antd/dist/antd.css';
+
+$color1: #ffffff;
 $color2: #809BCE;
 $color3: #EAC4D5;
+$color4: #153131;
 $transitionTime: .3s;
-
-/* Used for event bubbling */
-.unclickable {
-  pointer-events: none;
-}
 
 html,
 body {
@@ -15,65 +13,42 @@ body {
 
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #152028;
-  color: #F1F2EB;
+  background-color: $color4;
+  color: $color1;
 }
 
 #app {
-  width: 80vw;
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
-}
-
-/* Header */
-
-#contact {
+  transform: translate(-50%, -50%);
   display: flex;
 }
-
-#contact-img {
-  display: flex;
-  width: 155px;
-}
-
-
-#contact-info {
-  line-height: 1.5;
-}
-
-#headshot {
-  border-radius: 24px;
-  height: 125px;
-}
-
-#name {
- color: $color1;
-}
-
-/* Menu */
 
 #menu {
   display: flex;
-  flex-flow: column;
+  justify-content: center;
+  text-align: center;
 
   h2 {
     cursor: pointer;
-    padding: 12px 12px 12px 0;
-    margin: 6px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $color4;
+    padding: 12px 0 18px 0;
     font-size: 18px;
     width: 150px;
+    margin-bottom: 0;
     
     background-image: linear-gradient(0, #809BCE 0%, #EAC4D5 100%);
     background-repeat: no-repeat;
     background-size: 0 .2em;
-    background-position: 0 90%;
+    background-position: 50% 90%;
+
     transition: background-size $transitionTime;
   }
 
   h2:hover:not(.active) {
-    background-size: 25% .2em;
+    background-size: 20% .2em;
   }
 
   .active {
@@ -81,183 +56,66 @@ body {
   }
 }
 
-/* Content */
-
-#content {
-  display: flex;
-}
-
-#contentSection {
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-#academics {
-  display: flex;
-  height: 75px;
-}
-
-.academicsCard.active {
-  width: 350px !important;
-
-  .cardImg {
-    margin: 20px 0 0 24px !important;
-  }
-}
-
-.card {
-  overflow: hidden;
-  width: 125px;
-  height: 125px;
-  position: relative;
-  background-color: #f1f2eb;
-  border-radius: 24px;
-  margin-right: 12px;
-  cursor: pointer;
-
-  transition: all $transitionTime, width $transitionTime $transitionTime, height $transitionTime;
-
-  &.active {
-    width: 450px;
-    height: 100%;
-    transition: all $transitionTime .6s, width $transitionTime $transitionTime;
-  }
-
-  &.active .cardImg {
-    width: 50px;
-    margin: 24px 0 0 24px;
-    top: 0;
-    left: 0;
-    transform: translate(0);
-  
-    transition: all $transitionTime;
-  }
-}
-
-#academics {
-  .card {
-    &.active {
-      transition: all $transitionTime $transitionTime, width $transitionTime $transitionTime, height $transitionTime;
-    }
-  }
-}
-
 .cardImg {
   width: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  transition: all $transitionTime .5s;
+  pointer-events: none;
 }
 
-/* Expanded card */
+.card-grid-item {
+  width: 42%;
+  height: 150px;
+  text-align: center;
+  margin: 4%;
+  background-color: $color1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
-.expandedCard {
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  transition: all $transitionTime;
-  margin: 18px 24px 18px 90px;
+#contact-info {
+  font-size: 12px;
+}
 
-  &.active {
-    visibility: visible;
-    opacity: 1;
+#headshot {
+  border-radius: 2px;
+  height: 125px;
+}
 
-    transition: all $transitionTime .5s;
-  }
+#name {
+ color: $color4;
+ margin: 12px 0;
+ font-family: 'Josefin Sans', sans-serif;
+}
 
-  h3, h4, h5 {
-    margin: 0;
-  }
+#contact {
+  text-align: center;
+  margin-right: 12px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
 
-  .company {
-    margin: 0;
-  }
-
-  .row1 {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .achievements {
-    padding: 0;
-  }
-
-  .achievement {
-    padding: 0 15px 10px 0;
-  }
-
-  .achievement:last-child {
-    padding: 0;
+#item-container {
+  .ant-card-body {
+    height: 425px;
   }
 }
 
+.ant-card {
+  background-color: $color1;
+  background-image: url("/images/spikes.png");
+}
 
+.ant-card-head {
+  background: $color1
+}
 
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  #app {
-    width: 80vw;
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
-  }
+.site-drawer {
+  position: relative;
+  overflow: hidden;
+}
 
-  .card-container {
-    width: 100%;
-    margin-bottom: 12px;
-  }
-
-  #contact-img {
-    width: 190px;
-  }
-
-  #content {
-    display:block;
-  }
-
-  #academics {
-    display: block;
-
-    .card {
-      margin-bottom: 12px;
-    }
-  }
-
-  .card {
-    &.active {
-      width: 100%;
-
-      .cardImg {
-        top: 5px;
-      }
-    }
-  }
-
-  .expandedCard {
-    margin: 10px 0px 0px 15px;
-    padding-bottom: 20px;
-    .row1 {
-      display: block;
-      margin: 0 0 25px 80px;
-      padding-top: 15px;
-    }
-
-    .achievements {
-      margin: 10px 15px 0 15px;
-    }
-  }
-
-  #academics, #contentSection {
-    margin-top: 10px;
-  }
-
-  .academicsCard {
-    
-    &.active {
-      width: 100% !important;
-      height: 125px;
-    }
-  }
+ul {
+  padding-inline-start: 12px;
 }
