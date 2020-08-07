@@ -118,7 +118,7 @@ const careerData = [
     achievements: [
       'Cross collaborated with multiple teams and product managers to deliver new features to thousands of users over 20 regions.',
       'Maintained exemplary operations and metrics by increasing overall automated test coverage by over 50% to ensure website availability.',
-      'Converted multiple manual pipelines to CICD through creating integration tests and alarms, saving approximately 20 hours of developer time monthly.',
+      // 'Converted multiple manual pipelines to CICD through creating integration tests and alarms, saving approximately 20 hours of developer time monthly.',
       'Automated internationalization of strings saving hours of developer time per code change.',
       'Documented steps for critical job functions such as expanding to new regions and onboarding new frontend engineers.'
     ]
