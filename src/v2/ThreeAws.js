@@ -12,8 +12,7 @@ const hoverColorRgb = { r: .61, g: .44, b: .65 };
 const objScale = { x: 1.1, y: 1.1, z: 1.1 };
 
 function initSize(renderer) {
-  // renderer.setSize( window.innerWidth, window.innerHeight - 10 );
-  renderer.setSize(200, 100);
+  renderer.setSize(window.innerWidth * 0.2, window.innerHeight * 0.2);
 }
 
 function initLighting(scene) {
@@ -31,7 +30,7 @@ function initilize() {
   initLighting(scene);
 
   var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-  camera.position.z = 2;
+  camera.position.z = 2.8;
 
   // alpha makes background transparent, anti alias makes smooth
   var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });

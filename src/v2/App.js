@@ -8,7 +8,7 @@ import ThreeAws from './ThreeAws';
 const maxScreenSize = 600;
 
 function App(){
-  const [activeTab, setActiveTab] = useState('Careers');
+  const [activeTab, setActiveTab] = useState('Projects');
   const [activeData, setActiveData] = useState(null);
 
   function setActiveTabHandler({ target }) {
