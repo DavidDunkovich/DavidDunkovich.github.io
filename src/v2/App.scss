@@ -106,6 +106,7 @@ h2, h3 {
 #item-container {
   .ant-card-body {
     height: 425px;
+    overflow-y: auto;
   }
 }
 
@@ -154,4 +155,8 @@ ul {
   #headshot {
     margin-right: 12px;
   }
+}
+
+#container-aws {
+  pointer-events: none;
 }

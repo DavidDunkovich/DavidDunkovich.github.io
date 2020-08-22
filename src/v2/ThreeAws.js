@@ -44,34 +44,10 @@ function initilize() {
 
   var loader = new GLTFLoader();
   const interaction = new Interaction(renderer, scene, camera);
-  
   let awsSphere;
-  loader.load( '3d/sphere-aws.glb', gltf => {
+
+  loader.load('3d/sphere-aws.glb', gltf => {
     awsSphere = gltf.scene;
-    awsSphere.cursor = 'pointer';
-    awsSphere.on('click', function(ev) {
-      window.location.href = '/test'
-    });
-    awsSphere.on('mouseover', function(ev) {
-      new TWEEN.Tween(awsSphere.children[8].material.color)
-          .to(hoverColorRgb, 200)
-          .easing(TWEEN.Easing.Quartic.In)
-          .start();
-      new TWEEN.Tween(awsSphere.scale)
-        .to({ x: 1.05, y: 1.05, z: 1.05}, 200)
-        .easing(TWEEN.Easing.Quartic.In)
-        .start();
-    });
-    awsSphere.on('mouseout', function(ev) {
-      new TWEEN.Tween(awsSphere.children[8].material.color)
-          .to(baseColorRgb, 200)
-          .easing(TWEEN.Easing.Quartic.In)
-          .start();
-      new TWEEN.Tween(awsSphere.scale)
-        .to({ x: 1, y: 1, z: 1}, 200)
-        .easing(TWEEN.Easing.Quartic.In)
-        .start();
-    });
     scene.add( awsSphere );
   }, undefined, function ( error ) {
     console.error( error );

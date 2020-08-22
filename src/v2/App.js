@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './Header';
 import Menu from './Menu';
 import { Card, Drawer } from 'antd';
+import ThreeAws from './ThreeAws';
 
 const maxScreenSize = 600;
 
@@ -43,7 +44,7 @@ function App(){
       }
     }
     if (activeTab === 'Projects') {
-      availableItems = new Set(['shiny-key', 'sure-hope', 'firestack', 'balance-youth-sports']);
+      availableItems = new Set(['shiny-key', 'sure-hope', 'firestack', 'balance-youth-sports', 'three-aws']);
       if (availableItems.has(target.id)) {
         setActiveData(projectData.find(item => item.id === target.id));
       }
@@ -62,7 +63,7 @@ function App(){
         {<div id="item-container">
           {itemList().map(item => (
             <Card.Grid id={item.id} key={item.id} className="card-grid-item">
-              <img className="cardImg" src={item.logo} alt={item.logoAlt} />
+              {item.logoType === 'custom' ? item.logo : <img className="cardImg" src={item.logo} alt={item.logoAlt} />}
             </Card.Grid>
           ))}
         </div>}
@@ -84,7 +85,7 @@ function App(){
                   <div>{activeData.stack}</div>
                   <div>{activeData.tenure}</div>
                 </div>
-                <img style={{ maxWidth: '60px', marginRight: '12px' }} src={activeData.logo} alt={activeData.logoAlt} />
+                {activeData.logoType !== 'custom' && <img style={{ maxWidth: '60px', marginRight: '12px' }} src={activeData.logo} alt={activeData.logoAlt} />}
               </div>
               {activeData.description && (
                 <div style={{ marginBottom: '12px'}}>
@@ -166,6 +167,23 @@ const academicData = [
 ];
 
 const projectData = [
+  {
+    id: 'three-aws',
+    title: '3D Graphic AWS',
+    logoType: 'custom',
+    logo: <ThreeAws />,
+    tenure: '2020',
+    stack: 'Blender, Three.js, React, TweenJS',
+    link: 'https://daviddunkovich.github.io/ThreeAws/',
+    description: `I'm always interested in how I can differentiate websites. 3D graphics is a very cool way to liven up a website and provide a
+    relief of uniqueness. I decided to learn Blender to create 3D models as it is open source and well documented.
+    `,
+    description1: `
+    I created the 3D model in Blender and was able to export the model and import it into my create-react-app bootstrapped with Three.js.
+    Three.js allows me to handle setting up the scene (lighting, shadows, camera view, etc).
+    As a final touch, I added rotation and user interaction to the sphere. When you hover the sphere, I use TweenJS to transition the color and scaling. Overall, this was a very fun intro
+    to 3D web graphics and I look forward to seeing how I can leverage this skill in future websites.`,
+  },
   {
     id: 'shiny-key',
     title: 'Shiny Key Realty',
